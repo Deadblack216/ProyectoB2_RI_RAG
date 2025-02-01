@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema RAG</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema RAG para Planes de Candidatos</h1>
+        <form id="queryForm">
+            <input type="text" id="queryInput" placeholder="Ingresa tu consulta..." required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="response">
+            <h2>Respuesta:</h2>
+            <p id="responseText"></p>
+        </div>
+        <div id="documents">
+            <h2>Documentos Recuperados:</h2>
+            <ul id="documentList"></ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

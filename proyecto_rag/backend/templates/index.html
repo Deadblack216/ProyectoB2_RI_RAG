@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>Asistente</title>
+</head>
+<body>
+    <h1>Asistente de Consulta</h1>
+    <form id="queryForm">
+        <label for="queryInput">Consulta:</label>
+        <input type="text" id="queryInput" name="query" required>
+        <button type="submit">Consultar</button>
+    </form>
+
+    <div id="responseText"></div>
+    <ul id="documentList"></ul>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
